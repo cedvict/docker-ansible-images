@@ -3,7 +3,7 @@ ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends \
+  && apt-get install -y \
    apt-utils \
    locales \
    python3-setuptools \
