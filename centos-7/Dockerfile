@@ -18,7 +18,7 @@ RUN yum makecache fast \
   && yum -y install deltarpm epel-release initscripts \
   && yum -y update \
   && yum -y groupinstall "Development Tools" \
-  && yum -y install wget sudo which gcc openssl-devel libffi-devel bzip2-devel \
+  && yum -y install wget sudo which gcc openssl-devel locales libffi-devel bzip2-devel \
   && yum clean all
 
 RUN wget https://www.python.org/ftp/python/3.9.10/Python-3.9.10.tgz \
