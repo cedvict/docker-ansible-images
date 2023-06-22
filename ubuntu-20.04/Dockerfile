@@ -11,7 +11,6 @@ RUN apt-get update \
    python3-cryptography \
    software-properties-common \
    rsyslog systemd systemd-cron sudo iproute2 \
-  && rm -Rf /var/lib/apt/lists/* \
   && apt-get clean
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 
