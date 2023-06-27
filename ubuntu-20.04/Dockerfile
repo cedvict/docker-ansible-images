@@ -10,6 +10,7 @@ RUN apt-get update \
    python3-pip \
    python3-cryptography \
    software-properties-common \
+   openjdk-11-jdk \
    rsyslog systemd systemd-cron sudo iproute2 \
   && apt-get clean
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
